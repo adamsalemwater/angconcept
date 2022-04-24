@@ -1,0 +1,8 @@
+<h1>outer componenet</h1>
+
+<input #in type="text" [value] = "passToInner" placeholder="?????" >
+<input type="button" value="Change Me"  (click)="changeme(in.value)">
+<hr>
+
+<app-inner  [innerVar] ="passToInner"></app-inner>
+
