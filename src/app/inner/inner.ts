@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-inner',
-  templateUrl: './inner.html',
-  styleUrls: []
+  templateUrl: './inner.html'
 })
 
 export class InnerComponent {

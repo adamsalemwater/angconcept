@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class OuterComponent {
 
-    passToInner = "passing to inner";
+    passToInner:string = "passing to inner";
 
   constructor(){
   }
