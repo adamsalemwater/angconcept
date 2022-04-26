@@ -1,0 +1,15 @@
+<h4>Managing Category</h4>
+<br>
+<input #inId type="text" name ="id" [value]="1">
+
+<button type="button" (click) = "getCategory(inId.value)">Get Category</button>&nbsp;
+<!-- <button type="button" (click) = "postCategory(inId.value)">Post Category</button>&nbsp;
+<button type="button" (click) = "deletCategory(inId.value)">Delete Category</button>&nbsp; -->
+<br>
+<fieldset>
+    <legend><b>"Category from Endpoint"</b></legend>
+    <h2> Category: </h2>
+    <h4>Id: {{category.id}} -  Name: {{category.name}} </h4>
+    <br>
+    <div>Type of Operation: <b style="color:red">{{operation}}</b></div>
+</fieldset>

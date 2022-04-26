@@ -1,0 +1,15 @@
+<h4>Managing Products</h4>
+<br>
+<input #inId type="text" name ="id" [value]="1">
+
+<button type="button" (click) = "getProduct(inId.value)">Get Product</button>&nbsp;
+<button type="button" (click) = "postProduct(inId.value)">Post Product</button>&nbsp;
+<button type="button" (click) = "deletProduct(inId.value)">Delete Product</button>&nbsp;
+<br>
+<fieldset>
+    <legend><b>"Product from Endpoint"</b></legend>
+    <h2> Product: </h2>
+    <h4>Id: {{product.productId}} -  Name: {{product.productName}} - Price:{{product.productPrice}} </h4>
+    <br>
+    <div>Type of Operation: <b style="color:red">{{operation}}</b></div>
+</fieldset>

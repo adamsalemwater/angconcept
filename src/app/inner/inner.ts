@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 
 export class InnerComponent {
 
-  @Input()
+  @Input()                                                                                                                              
   innerVar: string ="";
 
   constructor(){

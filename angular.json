@@ -66,15 +66,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "small:build:production"
-            },
-            "development": {
-              "browserTarget": "small:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
+          "options": {
+            "proxyConfig": "src/proxy.conf.json",
+            "browserTarget": "small:build:development"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
